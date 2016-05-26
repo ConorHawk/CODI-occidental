@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.gear-big {
+			position: absolute;
+			top: 70px;
+			left: 60px;
+			-webkit-animation:spin 4s linear infinite;
+		}
+
+		.gear-small {
+			position: absolute;
+			top: 61px;
+			left: 328px;
+			-webkit-animation:spin 4s linear infinite;
+		}
+
+		.service-icon {
+			position: absolute;
+			top:0px;
+			left:0px;
+		}
+
+		@-webkit-keyframes spin { 
+        from { 
+            -webkit-transform: rotate(0deg); 
+        } to { 
+            -webkit-transform: rotate(360deg); 
+        }
+    }
+
+
+	</style>
+</head>
+<body>
+
+	<div class="service">
+		<img class="gear-big" src="gear.png" alt="gear big">
+		<img class="gear-small" src="gear.png" alt="gear big" width="100px">
+		<img class="service-icon" src="service.png" alt="service icon">
+	</div>
+	
+</body>
+</html>

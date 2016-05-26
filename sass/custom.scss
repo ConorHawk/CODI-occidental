@@ -1,0 +1,64 @@
+@import "_one-page-wonder";
+@import "variables.scss";
+@import "target.scss";
+
+body{
+	margin-top:0;
+}
+h1 {
+	color:white;
+}
+
+svg path{
+	transform: scale(1);
+	transform-origin:center;
+	transition:.2s all;
+}
+
+.graph-wrapper {
+	margin-top:3em;
+}
+
+.pie-wrapper {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.header-image{
+	background:url(../img/codi-bg.png);
+	background-size:cover;
+	background-position:center;
+}
+
+.headline h1, .headline h2 {
+	background: none;
+	color:white;
+	text-shadow: 2px 2px black;
+}
+
+
+#pie1{
+	fill:#2783b8;
+}
+#pie2{
+	fill:#e63130;
+}
+#pie3{
+	fill:#ff9621;
+}
+#pie4{
+	fill:#dedede;
+}
+#pie5{
+	fill:#429ca5;
+
+}
+
+#about {
+	display:flex;
+}
+
+
+
+

@@ -1,0 +1,35 @@
+.service{
+	position:absolute;
+	
+	right:40%;
+}
+
+.target {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+}
+
+.arrow {
+	position: absolute;
+	top: 61px;
+	left: 328px;
+	-webkit-animation: shoot 1s linear infinite;
+}
+
+
+
+@-webkit-keyframes shoot { 
+	0% { 
+		right:-100px; top:-100px; 
+	} 
+
+	50% { 
+		left: 165px; top:82px; 
+	}
+
+	100% { 
+		left: 165px; top:82px; 
+	}
+}
