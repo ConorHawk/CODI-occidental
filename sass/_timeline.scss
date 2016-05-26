@@ -1,0 +1,111 @@
+/* ---- Timeline ---- */
+
+ol {
+	position: relative;
+	display: block;
+	margin: 200px 100px 300px 50px;
+	height: 10px;
+	background: #29cae5;
+}
+ol::before,
+ol::after {
+	content: "";
+	position: absolute;
+	top: -12px;
+	display: block;
+	width: 0;
+	height: 0;
+    border-radius: 15px;
+	border: 15px solid #29cae5;
+}
+ol::before {
+	left: -5px;
+}
+ol::after {
+	right: -12px;
+	top: -11px;
+	border: 15px solid transparent;
+	border-right: 0;
+	border-left: 25px solid #29cae5;
+	border-radius: 28px;
+}
+
+/* ---- Timeline elements ---- */
+
+li {
+	position: relative;
+	top: -77px;
+	display: inline-block;
+	float: left;
+	width: 130px;
+	transform: rotate(-45deg);
+	font: bold 14px arial;
+	-webkit-transition: top .5s;
+}
+li::before {
+	content: "";
+	position: absolute;
+	top: 12px;
+	left: -29px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	
+	border: 6px solid #29cae5;
+	border-radius: 30px;
+	background: white;
+}
+
+/* ---- Details ---- */
+
+.details {
+	display: none;
+	position: absolute;
+	left: -110px;
+	top: 100px;
+	padding: 15px;
+	border-radius: 3px;
+	border-right: 2px solid rgba(0,0,0,.1);
+	border-bottom: 2px solid rgba(0,0,0,.1);
+	transform: rotate(45deg);
+	font: 12px arial;
+	background: #fff;
+}
+.details::before {
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #fff;
+	border-top: 0;
+}
+
+/* ---- Hover effects ---- */
+
+li:hover {
+	cursor: pointer;
+	top: -90px;
+    
+}
+li:hover::before {
+
+	top: 12px;
+	left: -29px;
+	width: 20px;
+	height: 20px;
+	border-width: 6px;
+	border-color: cyan;
+}
+li:hover .details {
+	display: block;
+    color: #444;
+}
+.blue-bold {
+	font-weight: bold;
+	font-size: 16px;
+	color: #29cae5;
+}
