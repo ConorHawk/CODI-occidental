@@ -1,6 +1,7 @@
 @import "_one-page-wonder";
 @import "variables.scss";
 @import "target.scss";
+@import "gear.scss";
 
 body{
 	margin-top:0;
@@ -55,9 +56,11 @@ svg path{
 
 }
 
-#about {
-	display:flex;
+.headline .container {
+	background: rgba(0,0,0,.5);
 }
+
+
 
 
 

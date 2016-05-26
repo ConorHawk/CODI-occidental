@@ -1,0 +1,37 @@
+.service2{
+	position:absolute;
+	transform:scale(.6)translateY(120px);
+	right:30%;
+
+
+
+
+}
+
+.gear-big {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+	-webkit-animation:spin 4s linear infinite;
+}
+
+.gear-small {
+	position: absolute;
+	top: 61px;
+	left: 328px;
+	-webkit-animation:spin 4s linear infinite;
+}
+
+.service-icon {
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+
+@-webkit-keyframes spin { 
+from { 
+    -webkit-transform: rotate(0deg); 
+} to { 
+    -webkit-transform: rotate(360deg); 
+}
+}
