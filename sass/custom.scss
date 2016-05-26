@@ -1,6 +1,7 @@
 @import "_one-page-wonder";
 @import "variables.scss";
 @import "target.scss";
+@import "timeline.scss";
 
 body{
 	margin-top:0;
@@ -39,25 +40,30 @@ svg path{
 
 
 #pie1{
-	fill:#2783b8;
+	fill:#29cae5;
 }
 #pie2{
-	fill:#e63130;
+	fill:#686f7a;
 }
 #pie3{
-	fill:#ff9621;
+	fill:#aebdc3;
 }
 #pie4{
 	fill:#dedede;
 }
 #pie5{
-	fill:#429ca5;
+	fill:#fc501b;
 
 }
 
 #about {
 	display:flex;
 }
+
+footer {
+	text-align: center;
+}
+
 
 
 
